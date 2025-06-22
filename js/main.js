@@ -387,7 +387,7 @@
             easing: 'ease-in-sine',
             delay: 300,
             once: true,
-            disable: 'mobile'
+            // disable: 'mobile'
         });
 
     };
@@ -447,6 +447,11 @@
     };
 
 
+
+    // NEW FROM CHATGPT
+
+
+
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
@@ -470,3 +475,4 @@
         
         
 })(jQuery);
+
