@@ -2202,7 +2202,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    /* background-color: linear-gradient(to bottom, #fffdfd, #ed6458); */
+    background-color:  #f6ecec;
     /* background-color: #e4e6c3; */
     
     color: #010507;
@@ -2265,7 +2266,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #FFFFFF;
+    background-color: #000000;
     position: absolute;
     right: 7.2rem;
     top: 0;
@@ -3936,6 +3937,172 @@ footer .row {
         }
       }
         
+
+
+      /* services */
+      .services {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 50px;
+            border-bottom: 1px solid #ddd;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service {
+            flex: 1;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+        .service img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        .service h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .service p {
+            font-size: 14px;
+            color: #555;
+        }
+        .service:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 0;
+            width: 1px;
+            height: 80%;
+            background-color: #ddd;
+        }
+        .underline {
+            width: 90%;
+            height: 1px;
+            background-color: #ddd;
+            margin: 50px auto 0;
+        }
+
+        /* delivery tipe */
+        .services {
+          display: flex;
+          justify-content: center;
+          align-items: stretch;
+          padding: 50px;
+          border-bottom: 1px solid #ddd;
+          max-width: 1200px;
+          margin: auto;
+          flex-wrap: wrap; /* Allow wrapping */
+      }
+      .service {
+          flex: 1;
+          text-align: center;
+          padding: 0 20px;
+          position: relative;
+          box-sizing: border-box;
+      }
+      .service img {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 15px;
+      }
+      .service h3 {
+          margin: 10px 0;
+          font-size: 20px;
+      }
+      .service p {
+          font-size: 14px;
+          color: #555;
+      }
+      .service:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          top: 20px;
+          right: 0;
+          width: 1px;
+          height: 80%;
+          background-color: #ddd;
+      }
+      .underline {
+          width: 90%;
+          height: 1px;
+          background-color: #ddd;
+          margin: 50px auto 0;
+      }
+  
+      /* Mobile view */
+      @media (max-width: 768px) {
+          .services {
+              flex-direction: column;
+              padding: 20px;
+          }
+          .service {
+              flex: none;
+              width: 100%;
+              padding: 20px 0;
+          }
+          .service:not(:last-child)::after {
+              display: none; /* Remove vertical divider on mobile */
+          }
+      }
+  /* service end */
+
+
+
+   /* Features Area  */
+      @media (max-width: 1199px) {
+        .features_area {
+          padding-bottom: 50px;
+        }
+      }
+    
+      .feature_item {
+        padding: 45px 25px;
+        text-align: center;
+        background: #f9f9fd;
+        cursor: pointer;
+        margin-bottom: 30px;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+    
+      .feature_item::before {
+        content: attr(data-number);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 120px;
+        color: rgba(0, 0, 0, 0.068);
+        z-index: 0;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        pointer-events: none;
+      }
+    
+      .feature_item img {
+        margin-bottom: 35px;
+        position: relative;
+        z-index: 2;
+      }
+    
+      .feature_item h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+      }
+    
+      .feature_item:hover {
+        box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+        background: #fff;
+      }
+/* end featuted */
          
 
 
