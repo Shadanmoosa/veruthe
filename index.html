@@ -32,6 +32,29 @@
     <link rel="shortcut icon" href="images/LOGO1.png" type="image/x-icon">
     <link rel="icon" href="images/LOGO1.png" type="image/x-icon">
 
+    <style>
+.s-about {
+    position: relative;
+    overflow: hidden;
+}
+
+.s-about::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('images/5d94fae3-059c-4e15-949b-3c43690b4182.jpg') no-repeat center center;
+    background-size: 1400px auto; /* Set width to 400px, adjust as needed */
+    opacity: 0.10; /* Low opacity */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.s-about > * {
+    position: relative;
+    z-index: 2;
+}
+    </style>
+
 </head>
 
 <body id="top">
@@ -427,7 +450,7 @@ This temperature ensures: Even browning, crispy outer layers, proper heating thr
 
     <!-- contact
     ================================================== -->
-    <section id="contact" class="s-contact"  style="margin-top: -200px;">
+    <section id="contact" class="s-contact"  style="margin-top: -250px;">
 
         <div class="overlay"></div>
         <div class="contact__line"></div>
